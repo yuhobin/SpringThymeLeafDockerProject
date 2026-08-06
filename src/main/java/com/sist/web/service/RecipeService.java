@@ -9,5 +9,7 @@ public interface RecipeService {
 	
 	public List<Recipe> recipeListData(int page);
 	
-	public int[] getPageData(int page);
+	public int[] getPageData(int page, int rowsize);
+	
+	public List<Chef> chefListData(int page);
 }
