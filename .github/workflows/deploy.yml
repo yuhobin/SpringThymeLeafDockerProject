@@ -33,6 +33,7 @@ jobs:
           PID=$(lsof -t -i:8080 || true)
           if [ -n "$PID" ]; then
             kill -15 "$PID" || true
+            sleep 5
           fi
         
           
